@@ -35,15 +35,15 @@
           </li>
           <!-- navigation to other pages -->
           <li class="list-style-none">
-            <a class="navigation-list-link" href="./agencja.html">Agencja</a>
+            <a class="navigation-list-link underline" href="./agencja.html">Agencja</a>
           </li>
           <li class="list-style-none">
-            <a class="navigation-list-link" href="./portfolio.html"
+            <a class="navigation-list-link underline" href="./portfolio.html"
               >Portfolio</a
             >
           </li>
           <li class="list-style-none">
-            <a class="navigation-list-link" href="./kontakt.html">Kontakt</a>
+            <a class="navigation-list-link underline" href="./kontakt.html">Kontakt</a>
           </li>
         </ol>
         <div class="contact">
@@ -128,30 +128,38 @@
       </section>
 
       <section>
-        <!--class="section" tymczasowo zakryte, by nie psuć layout'u-->
         <div class="container">
           <div>
             <!-------------------main-second-section---------------->
             <h2>Czym się zajmujemy</h2>
             <div class="photo-work">
+              <div class="thumb">
               <img
                 src="images/section-2-czym-sie-zajmujemy/img1-seo-squoosh.jpg"
                 width="370"
                 height="294"
                 alt="work-1-seo"
-              />
+                />
+              <p class="label">Aplikacje komputerowe</p>
+              </div>
+              <div class="thumb">
               <img
                 src="images/section-2-czym-sie-zajmujemy/img2-ux-design-squoosh.jpg"
                 width="370"
                 height="294"
                 alt="work-2-ux-design"
               />
+              <p class="label">Aplikacje mobilne</p>
+              </div>
+              <div class="thumb">
               <img
                 src="images/section-2-czym-sie-zajmujemy/img3-design-squoosh.jpg"
                 width="370"
                 height="294"
                 alt="work-3-graphic-designer"
               />
+              <p class="label">Rozwiązania graficzne</p>
+            </div>
             </div>
           </div>
         </div>
@@ -576,5 +584,9 @@
         
       </div>
     </footer>
+    <button data-modal-open>Zamów usługę</button>
+    <button data-modal-close type="button">X</button>
+    <div class="backdrop is-hidden" data-modal>modal</div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
