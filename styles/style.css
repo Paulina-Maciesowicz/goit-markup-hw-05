@@ -1,0 +1,469 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+    --main-font: font-family: 'Roboto', sans-serif;
+    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-color: #2196f3;
+    --secondary-color: #2F303A;
+    --third-color: #F5F4FA
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}   
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.display {
+    display: flex;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 auto;
+    line-height: 1;
+}
+
+/* ----------------MIN-RESET------------------------- */
+/* remember to define focus styles! */
+ol, ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    padding: 0;
+}
+.list-style-none {
+    list-style: none
+}
+.link-style-none {
+    text-decoration: none
+}
+img {
+    display: block;
+}
+figure {
+    margin:auto 0;
+}
+
+/* ----------------MIN-RESET-END--------------------- */
+/* ----------------COMPONENTS------------------------ */
+.button-style-1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1.875;
+    background: #2196F3;
+    padding:10px 41px 10px 41px;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+.button-style {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    padding:6px 22px 6px 22px;
+    border-radius: 4px;
+    color: #212121;
+    cursor: pointer;
+    margin-right: 8px;
+    border: none;
+}
+.button-style:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.button-style:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+/* ----------------COMPONENTS-END-------------------- */
+/* --------------------HEADER------------------------ */
+.header-description {
+    background-color: #FFFFFF;
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+.navigation-list {
+    display: flex;
+    justify-content: center;
+}
+.navigation-logo {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-right: 93px;
+}
+.highlight-webstudio {
+    text-decoration: none;
+    color: #2196f3;
+    font-family: 'Raleway', sans-serif;
+}
+.navigation-list-link {
+    text-decoration: none;
+    font-style: normal;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    margin-right: 46px;}
+.navigation-list-link:hover {color: rgba(33, 150, 243, 1);}
+.navigation-list-link:focus {color: rgba(33, 150, 243, 1);
+}
+.contact {
+    display: flex;
+    margin-left: 371px;
+    align-items: center;
+}
+.contact-link {
+    text-decoration: none;
+    font-style: normal;
+    color: #757575;
+    line-height: 1.714;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.contact-link:hover {color: rgba(33, 150, 243, 1);}
+.contact-link:hover svg{color: rgba(33, 150, 243, 1);
+fill:var(--main-color);
+}
+.contact-link:focus {color: rgba(33, 150, 243, 1);}
+.contact-link:focus svg{color: rgba(33, 150, 243, 1);
+fill:var(--main-color);
+}
+.mail {
+    width:16px;
+    height:12px;
+    margin-right: 10px;
+    fill: #757575;
+}
+.phone {
+    width:10px;
+    height:16px;
+    margin-right: 10px;
+    fill: #757575;
+}
+/* --------------------HEADER-END--------------------- */
+/* -----------------------MAIN------------------------ */
+/* -----------------------MAIN-hero------------------- */
+.hero {
+    background-color: #2F303A;
+    background-image: url(../images/section-hero/background-squoosh.jpg);
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    text-align: center;
+    position: relative;
+}
+.hero-2 {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #ffffff;
+    line-height: 1.363;
+    width: 670px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* -------------main-first-section------------------- */
+.box {
+    padding:25px;
+    margin-bottom:30px;
+    width: 270px; 
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.text-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 3%;
+    text-decoration: bold;
+}
+.text-title-description{
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 3%;
+}
+
+/* -------------main-second-section------------------- */
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-decoration: Bold;
+    letter-spacing: 3%;
+    text-align: center;
+    margin-bottom:50px;    
+}
+h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 3%;
+    text-align: center;
+    margin-bottom:10px;
+}
+.photo-work {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    margin: 0 auto;
+}
+.job-name {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 3%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* -----------------main-third-section-------------- */
+.third-background {
+    background-color: #F5F4FA;
+    height: 648px;
+}
+.box-person{
+    width: 270px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+
+    /* box-shadow: <x-offset> <y-offset> <blur> <spread> <color> */
+    box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.frame-person {
+    padding: 30px; 
+}
+.column {
+    gap: 30px;
+}
+/*-------------------box-with-social-icons------------#FFFFFF*/
+.social-menu ul li{
+    width: 206px;
+    height: 56px;
+    margin-top: 16px;
+}
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px;
+}
+.social-icon:hover {
+    fill:#ffffff;
+    border-radius: 50%;
+    background-color: #2196f3;
+}
+.i-20 {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.i-20:hover {
+    fill:#ffffff;
+}
+.social-icon:hover .i-20 {
+    background-color: var(--main-color); 
+    fill :#fff;
+}
+/*--------------------section-our-clients----------- */
+.client-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.client-box {
+    width: 1170px;
+    height: 92px;
+}
+.client-icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: 30px;
+}
+.client-inside {
+    width: 106px;
+    height: 60.04px;
+    fill: #AFB1B8;
+    margin-top: 17.7px;  
+}
+.client-icon:hover {
+   border: 1px solid var(--main-color);
+}
+.client-icon:hover .client-inside {
+    fill: var(--main-color);
+}
+/* --------------------MAIN-END---------------------- */
+/* --------------------FOOTER------------------------ */
+.footer-background {
+    background-color: #2F303A;
+}
+.navigation-logo-2 {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;    
+}
+.contact-link-2 {
+    text-decoration: none;
+    font-style: normal;
+    color: #757575;
+    line-height: 1.714;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+.contact-link-2:hover {color: rgba(33, 150, 243, 1);}
+.contact-link-2:focus {color: rgba(33, 150, 243, 1);
+}
+.contact-link-maps {
+    color: #ffffff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;}
+.contact-link-maps:hover {color: rgba(33, 150, 243, 1);}
+.contact-link-maps:focus {color: rgba(33, 150, 243, 1);
+}
+.adres{
+    margin-top:20px;
+}
+/*-------------------box-with-social-icons-footer----*/
+.box-navigation-footer {
+    width: 246px;
+}
+.box-navigation-footer-2 {
+    width: 206px;
+    margin-left: 70px;
+}
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    margin-top: 20px; 
+}
+.color {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+}
+/* --------------------FOOTER----END----------------- */
+/* --------------------PORTFOLIO-page----------------- */
+.container-btn {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.contener-img {
+    /* Wycentrowanie sekcji */
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.contener-img .wrapper {
+    /* dodawnie flex-wrap tylko do wrappera znajdującego się w container image. */
+    /* Najlepiej utwożyć osobną klasę lub drugą klasę */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Odległośc między poszczególnym dzieckiem ul w z góry doły i z boków */
+    gap: 30px;
+}
+.frame-portfolio {
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    padding: 20px 24px 20px 24px;    
+}
+.title-porftolio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    letter-spacing: 0.06em;
+}
+.tilie-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #757575;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
+}
+.box-shadow:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+.box-shadow:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+/* --------------------PORTFOLIO-end----------------- */
+
