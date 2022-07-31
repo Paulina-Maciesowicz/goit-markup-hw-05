@@ -35,15 +35,15 @@
           </li>
           <!-- navigation to other pages -->
           <li class="list-style-none">
-            <a class="navigation-list-link underline" href="./agencja.html">Agencja</a>
+            <a class="navigation-list-link active" href="./agencja.html">Agencja</a>
           </li>
           <li class="list-style-none">
-            <a class="navigation-list-link underline" href="./portfolio.html"
+            <a class="navigation-list-link" href="./portfolio.html"
               >Portfolio</a
             >
           </li>
           <li class="list-style-none">
-            <a class="navigation-list-link underline" href="./kontakt.html">Kontakt</a>
+            <a class="navigation-list-link" href="./kontakt.html">Kontakt</a>
           </li>
         </ol>
         <div class="contact">
@@ -78,7 +78,7 @@
         <!----------------MAIN-hero----------------------------->
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <!--button-->
-        <button class="button-style-1">Zamów usługę</button>
+        <button class="button-style-1" data-modal-open>Zamów usługę</button>
           </div>
       </div>
       </div>
@@ -583,10 +583,18 @@
       </div>
     </footer>
 
-    <button data-modal-open>Zamów usługę</button>
+<div class="container">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <svg class="close-btn" data-modal-close>
+        <use href="./images/svg-modal-window/symbol-defs-svgomg.svg#icon-close-black-18dp-2-1"></use>
+      </svg>
+      </div>
+    </div>
+</div>
+<!--<button data-modal-open>Zamów usługę</button>
     <button data-modal-close type="button">X</button>
-    <div class="backdrop is-hidden" data-modal>modal</div>
-
+    <div class="backdrop is-hidden" data-modal>modal</div> -->
     <script src="./js/modal.js"></script>
     
   </body>
