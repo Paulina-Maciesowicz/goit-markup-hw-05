@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +21,7 @@
     <!--content-header-->
     <header class="container header-description">
       <!--navigation menu-->
-      <nav class="navigation-list">
+      <nav class="navigation-list ">
         <ol class="list-style-none navigation-list">
           <li>
             <h3>
@@ -48,8 +45,9 @@
             <a class="navigation-list-link" href="./kontakt.html">Kontakt</a>
           </li>
         </ol>
-        <div class="contact">
-          <h6>
+
+        <ul class="contact">
+          <li>
             <a
               class="list-style-none contact-link"
               href="mailto:info@devstudio.com"
@@ -60,8 +58,8 @@
               </svg>
               info@devstudio.com</a
             >
-          </h6>
-          <h6>
+          </li>
+          <li>
             <a class="list-style-none contact-link" href="tel:+48111111111"
               ><svg class="phone">
                 <use
@@ -69,23 +67,21 @@
                 ></use></svg
               >(48)111-111-111</a
             >
-          </h6>
-        </div>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <!--content-main-->
-      <div class="container hero background-image">
-        <div class="hero-2 wrapper">
-          <div>
-            <!----------------MAIN-hero----------------------------->
-            <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <!--button-->
-            <button class="button-style-1" data-modal-open>Zamów usługę</button>
-          </div>
+      <section class="section container hero">
+        <div class="hero-2">
+          <!--------------MAIN-hero----------------------------->
+          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <!--button-->
+          <button class="button-style-1" data-modal-open>Zamów usługę</button>
         </div>
-      </div>
+      </section>
 
       <section class="section">
         <div class="container">
@@ -145,39 +141,37 @@
 
       <section>
         <div class="container">
-          <div>
-            <!-------------------main-second-section---------------->
-            <h2>Czym się zajmujemy</h2>
-            <div class="photo-work">
-              <div class="thumb">
-                <img
-                  src="images/section-2-czym-sie-zajmujemy/img1-seo-squoosh.jpg"
-                  width="370"
-                  height="294"
-                  alt="work-1-seo"
-                />
-                <p class="label">Aplikacje komputerowe</p>
-              </div>
-              <div class="thumb">
-                <img
-                  src="images/section-2-czym-sie-zajmujemy/img2-ux-design-squoosh.jpg"
-                  width="370"
-                  height="294"
-                  alt="work-2-ux-design"
-                />
-                <p class="label">Aplikacje mobilne</p>
-              </div>
-              <div class="thumb">
-                <img
-                  src="images/section-2-czym-sie-zajmujemy/img3-design-squoosh.jpg"
-                  width="370"
-                  height="294"
-                  alt="work-3-graphic-designer"
-                />
-                <p class="label">Rozwiązania graficzne</p>
-              </div>
-            </div>
-          </div>
+          <!-------------------main-second-section---------------->
+          <h2>Czym się zajmujemy</h2>
+          <ul class="photo-work">
+            <li class="thumb">
+              <img
+                src="images/section-2-czym-sie-zajmujemy/img1-seo-squoosh.jpg"
+                width="370"
+                height="294"
+                alt="work-1-seo"
+              />
+              <p class="label">Aplikacje komputerowe</p>
+            </li>
+            <li class="thumb">
+              <img
+                src="images/section-2-czym-sie-zajmujemy/img2-ux-design-squoosh.jpg"
+                width="370"
+                height="294"
+                alt="work-2-ux-design"
+              />
+              <p class="label">Aplikacje mobilne</p>
+            </li>
+            <li class="thumb">
+              <img
+                src="images/section-2-czym-sie-zajmujemy/img3-design-squoosh.jpg"
+                width="370"
+                height="294"
+                alt="work-3-graphic-designer"
+              />
+              <p class="label">Rozwiązania graficzne</p>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -194,59 +188,60 @@
                   height="260"
                   alt="John-Doe-Product-Designer"
                 />
+
+                <figcaption class="frame-person">
+                  <h4>John Doe</h4>
+                  <p class="job-name">Product Designer</p>
+                  <!-------------------box-with-social-icons---------------->
+                  <div class="social-menu">
+                    <ul class="wrapper">
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
               </figure>
-              <figcaption class="frame-person">
-                <h4>John Doe</h4>
-                <p class="job-name">Product Designer</p>
-                <!-------------------box-with-social-icons---------------->
-                <div class="social-menu">
-                  <ul class="wrapper">
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
             </li>
             <li class="box-person">
               <figure>
@@ -256,58 +251,59 @@
                   height="260"
                   alt="Nicole-Doe-Frontend-Developer"
                 />
+
+                <figcaption class="frame-person">
+                  <h4>Nicole Doe</h4>
+                  <p class="job-name">Frontend Developer</p>
+                  <div class="social-menu">
+                    <ul class="wrapper">
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
               </figure>
-              <figcaption class="frame-person">
-                <h4>Nicole Doe</h4>
-                <p class="job-name">Frontend Developer</p>
-                <div class="social-menu">
-                  <ul class="wrapper">
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
             </li>
             <li class="box-person">
               <figure>
@@ -317,58 +313,59 @@
                   height="260"
                   alt="Mike-Newton-Marketing"
                 />
+
+                <figcaption class="frame-person">
+                  <h4>Mike Newton</h4>
+                  <p class="job-name">Marketing</p>
+                  <div class="social-menu">
+                    <ul class="wrapper">
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
               </figure>
-              <figcaption class="frame-person">
-                <h4>Mike Newton</h4>
-                <p class="job-name">Marketing</p>
-                <div class="social-menu">
-                  <ul class="wrapper">
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
             </li>
             <li class="box-person">
               <figure>
@@ -378,58 +375,59 @@
                   height="260"
                   alt="Noah-Bee-UI-Designer"
                 />
+
+                <figcaption class="frame-person">
+                  <h4>Noah Bee</h4>
+                  <p class="job-name">UI Designer</p>
+                  <div class="social-menu">
+                    <ul class="wrapper">
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          ><div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div class="social-icon">
+                            <svg class="i-20">
+                              <use
+                                href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
+                              ></use>
+                            </svg></div
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </figcaption>
               </figure>
-              <figcaption class="frame-person">
-                <h4>Noah Bee</h4>
-                <p class="job-name">UI Designer</p>
-                <div class="social-menu">
-                  <ul class="wrapper">
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-instagram-2"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-twitter-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#"
-                        ><div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-facebook-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        <div class="social-icon">
-                          <svg class="i-20">
-                            <use
-                              href="./images/icons.svg/symbol-defs-min.svg#icon-linkedin-1"
-                            ></use>
-                          </svg></div
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </figcaption>
             </li>
           </ul>
         </div>
@@ -515,7 +513,7 @@
       </section>
     </main>
 
-    <footer class="section footer-background">
+    <footer class="footer-background">
       <div class="container display">
         <!----------------------FOOTER-------------------------->
         <div class="box-navigation-footer">
@@ -528,7 +526,6 @@
             <h6>
               <a
                 class="contact-link-maps"
-                list
                 href="https://goo.gl/maps/ytyZVktENLEFnypA7"
                 >m. Warszawa, Aleje Jerozolimskie 21</a
               >
