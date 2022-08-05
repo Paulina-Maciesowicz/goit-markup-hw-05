@@ -76,9 +76,6 @@ figure {
     color: #ffffff;
     cursor: pointer;
     border: none;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
 }
 .button-style {
     font-weight: 700;
@@ -95,6 +92,7 @@ figure {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: background-color;
 } 
 .button-style:hover {
     background-color: #2196f3;
@@ -124,6 +122,7 @@ a {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: background-color;
 }
 a.navigation-list-link:hover:after{
     width: 100%; 
@@ -136,7 +135,7 @@ a.navigation-list-link.active:after {
     width: 100%;
     left: 0; 
 }
-a.navigation-list-link.active {
+a.navigation-list-link .active {
     color: var(--main-color);
 }
 .header-description {
@@ -176,7 +175,9 @@ a.navigation-list-link.active {
     margin-right: 46px;
 
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);}
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: color;
+    }
 .navigation-list-link:hover {color: rgba(33, 150, 243, 1);}
 .navigation-list-link:focus {color: rgba(33, 150, 243, 1);
 }
@@ -199,6 +200,7 @@ a.navigation-list-link.active {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: color;
 }
 .contact-link:hover {color: rgba(33, 150, 243, 1);}
 .contact-link:hover svg{color: rgba(33, 150, 243, 1);
@@ -269,7 +271,7 @@ h1 {
     letter-spacing: 3%;
     text-decoration: bold;
 }
-.text-title-description{
+.text-title-description {
     color: #757575;
     font-weight: 400;
     font-size: 14px;
@@ -371,6 +373,7 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: background-color;
 }
 .social-icon:hover {
     fill:#ffffff;
@@ -384,6 +387,7 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: background-color;
 }
 .i-20:hover {
     fill:#ffffff;
@@ -412,21 +416,23 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: border, fill;
 }
 .client-inside {
     width: 106px;
     height: 60.04px;
     fill: #AFB1B8;
-    margin-top: 17.7px;  
+    margin-top: 17.7px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: border, fill;
 }
 .client-icon:hover {
    border: 1px solid var(--main-color);
 }
 .client-icon:hover .client-inside {
     fill: var(--main-color);
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
 }
 /* --------------------MAIN-END---------------------- */
 /* --------------------FOOTER------------------------ */
@@ -452,6 +458,7 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: color;
 }
 .contact-link-2:hover {color: rgba(33, 150, 243, 1);}
 .contact-link-2:focus {color: rgba(33, 150, 243, 1);
@@ -467,6 +474,7 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: color;
 }
 .contact-link-maps:hover {color: rgba(33, 150, 243, 1);}
 .contact-link-maps:focus {color: rgba(33, 150, 243, 1);
@@ -552,7 +560,8 @@ h4 {
     background: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
-    transition: transform 250ms;
+    transition-duration: 250ms;
+    transition-property: transform, transition, background;
 }
 
 .box-portfolio {
@@ -561,6 +570,7 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: translate;
 }
 
 .box-portfolio:hover .overlay{
@@ -588,7 +598,7 @@ h4 {
 .backdrop {
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0px;
@@ -602,10 +612,14 @@ h4 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     background-color: #fff;
     width: 528px;
-    min-height: 581px;   
+    min-height: 581px;
+    
+    transform: translate(-50%,-50%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: translate;
 }
 .close-btn {
     position: absolute;
@@ -623,5 +637,9 @@ h4 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-property: opacity, visibility;
 }
 /* --------------------MODAL-WINDOW-end-------------- */
