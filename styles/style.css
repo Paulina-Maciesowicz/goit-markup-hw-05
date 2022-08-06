@@ -645,7 +645,4 @@ h4 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
-    transform: translateY(100%);
-}
 /* --------------------MODAL-WINDOW-end-------------- */
