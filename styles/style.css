@@ -390,7 +390,6 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: background-color;
 }
 .i-20:hover {
     fill:#ffffff;
@@ -501,12 +500,21 @@ h4 {
     background: rgba(255, 255, 255, 0.1);
     margin-right: 10px;
     margin-top: 20px; 
+    color: #fff;
 }
 .color {
     color: #fff;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
+}
+.i-20-white {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
 }
 /* --------------------FOOTER----END----------------- */
 /* --------------------PORTFOLIO-page----------------- */
@@ -645,4 +653,5 @@ h4 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
 /* --------------------MODAL-WINDOW-end-------------- */
