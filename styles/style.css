@@ -11,7 +11,7 @@
     --third-color: #F5F4FA
 }
 .container {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -85,20 +85,18 @@ figure {
     background: #F5F4FA;
     padding:6px 22px 6px 22px;
     border-radius: 4px;
-    color: #212121;
     cursor: pointer;
     margin-right: 8px;
     border: none;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: background-color;
+    transition-property: background-color, color, box-shadow;
 } 
 .button-style:hover {
     background-color: #2196f3;
     color: #ffffff;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;   
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);   
 }
 .button-style:focus {
     background-color: #2196f3;
@@ -140,13 +138,11 @@ a.navigation-list-link .active {
 }
 .header-description {
     background-color: #FFFFFF;
-    width: 1600px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-    width: 100%;    
+    border-bottom: 1px solid #ECECEC;    
 }
 .navigation-list {
     display: flex;
@@ -172,18 +168,20 @@ a.navigation-list-link .active {
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
-    margin-right: 46px;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: color;
     }
+.margin {
+    margin-right: 46px;
+}
 .navigation-list-link:hover {color: rgba(33, 150, 243, 1);}
 .navigation-list-link:focus {color: rgba(33, 150, 243, 1);
 }
 .contact {
     display: flex;
-    margin-left: 371px;
+    margin-left: auto;
     align-items: center;
 }
 .contact-link {
@@ -194,13 +192,18 @@ a.navigation-list-link .active {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.02em;
-    margin-left: 50px;
     display: flex;
     align-items: center;
+    margin-left: 50px;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
     transition-property: color;
+}
+svg {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+    transition-property: fill;
 }
 .contact-link:hover {color: rgba(33, 150, 243, 1);}
 .contact-link:hover svg{color: rgba(33, 150, 243, 1);
@@ -392,8 +395,7 @@ h4 {
 .i-20:hover {
     fill:#ffffff;
 }
-.social-icon:hover .i-20 {
-    background-color: var(--main-color); 
+.social-icon:hover .i-20 { 
     fill :#fff;
 }
 /*--------------------section-our-clients----------- */
@@ -416,7 +418,7 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: border, fill;
+    transition-property: border;
 }
 .client-inside {
     width: 106px;
@@ -426,7 +428,7 @@ h4 {
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
-    transition-property: border, fill;
+    transition-property: fill;
 }
 .client-icon:hover {
    border: 1px solid var(--main-color);
@@ -532,7 +534,10 @@ h4 {
     border-bottom: 1px solid #E5E5E5;
     border-right: 1px solid #E5E5E5;
     border-left: 1px solid #E5E5E5;
-    padding: 20px 24px 20px 24px;   
+    padding: 20px 24px 20px 24px;
+    position:relative;
+    z-index: 1;
+    background: #fff;  
 }
 .title-porftolio {
     font-weight: 700;
@@ -564,7 +569,7 @@ h4 {
     transition-property: transform, transition, background;
 }
 
-.box-portfolio {
+.box-shadow {
     position: relative;
     overflow: hidden;
 
@@ -573,8 +578,8 @@ h4 {
     transition-property: translate;
 }
 
-.box-portfolio:hover .overlay{
-  transform: translateX(0);
+.box-shadow:hover .overlay{
+    transform: translateX(0);
 }
 .box-shadow:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -607,6 +612,9 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition-duration: 250ms;
+    transition-property: opacity, visibility, transform;
 }
 .modal {
     position: absolute;
@@ -639,7 +647,5 @@ h4 {
     pointer-events: none;
 
     transform: translateY(100%);
-    transition-duration: 250ms;
-    transition-property: opacity, visibility;
 }
 /* --------------------MODAL-WINDOW-end-------------- */
