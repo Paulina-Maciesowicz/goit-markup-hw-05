@@ -614,7 +614,7 @@ h4 {
     align-items: center;
 
     transition-duration: 250ms;
-    transition-property: opacity, visibility, transform;
+    transition-property: opacity, visibility;
 }
 .modal {
     position: absolute;
